@@ -1,25 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TopNavbar from './components/TopNavBar';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import AboutMe from './pages/AboutMe';
+import {Route, Routes} from "react-router-dom"
+import { FishingProject } from './projects/Fishing';
+import { ToastsProject } from './projects/Toasts';
+import { BuffsProject } from './projects/Buffs';
+import { ConsumablesProject } from './projects/Consumables';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return ( 
+  <>
+    <TopNavbar />
+    <div className='content'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/fishing" element={<FishingProject />} />
+        <Route path="/toasts" element={<ToastsProject />} />
+        <Route path="/buffs" element={<BuffsProject />} />
+        <Route path="/consumables" element={<ConsumablesProject />} />
+      </Routes>
     </div>
+  </>
   );
 }
 
