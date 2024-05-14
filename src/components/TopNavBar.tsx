@@ -15,8 +15,8 @@ export default function TopNavbar() {
     return <nav className="nav">
         <Link to="/" className="site-title">Home</Link>
         <ul>
-            <ActiveRef toPage={"/projects"}> 
-                Projects
+            <ActiveRef toPage={"/lunapets"}> 
+                Lunapets
             </ActiveRef>
             <ActiveRef toPage={"/aboutme"}> 
                 About Me
