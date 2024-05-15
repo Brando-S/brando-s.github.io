@@ -18,7 +18,7 @@ export default function LunapetsProjects() {
         I would also like to point out that the Lunapets team only has two engineers working on the project, and I am one of them. I led the design and
         implementation of each of the listed projects.
         <div className="projectsbody">
-            <ProjectComponent projectName="Trading" linkSrc="trading" projectIcon="trading.png" date=" " description="A way for players to trade items between one another"/>
+            <ProjectComponent projectName="Trading" linkSrc="trading" projectIcon="/trading/icontrade.png" date=" " description="A way for players to trade items between one another"/>
             <ProjectComponent projectName="Fishing" linkSrc="fishing" projectIcon="fishing.png" date=" " description="A modular fishing activity for Lunapets"/>
             <ProjectComponent projectName="Consumables" linkSrc="consumables" projectIcon="/consumables/consumablesIcon.png" date=" " description="Items that the player can consume to apply buffs or debuffs to themselves or other entities"/>
             <ProjectComponent projectName="Buffs" linkSrc="buffs" projectIcon="/buffs/buffs.png" date=" " description="Buffs augment the way that entities interact with the game world"/>
