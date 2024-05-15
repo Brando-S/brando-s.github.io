@@ -11,6 +11,7 @@ import { ToastsProject } from './projects/Toasts';
 import { BuffsProject } from './projects/Buffs';
 import { ConsumablesProject } from './projects/Consumables';
 import { TradingProject } from './projects/Trading';
+import { PetEmotionsProject } from './projects/PetEmotions';
 
 function App() {
   return ( 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/buffs" element={<BuffsProject />} />
         <Route path="/consumables" element={<ConsumablesProject />} />
         <Route path="/trading" element={<TradingProject />} />
+        <Route path="/faceEmotes" element={<PetEmotionsProject />} />
       </Routes>
     </div>
   </>
