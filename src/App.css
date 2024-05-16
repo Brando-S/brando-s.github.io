@@ -60,6 +60,20 @@ html {
   overflow: hidden;
 }
 
+@media (max-width: 5000000px) {
+  .content{
+     margin-left: 25%;
+     margin-right: 25%;
+  }
+}
+
+@media (max-width: 700px) {
+  .content{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 .content h1 {
   text-align: center;
 }
