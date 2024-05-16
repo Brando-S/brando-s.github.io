@@ -18,8 +18,17 @@ export default function TopNavbar() {
             <ActiveRef toPage={"/lunapets"}> 
                 Lunapets
             </ActiveRef>
-            <ActiveRef toPage={"/aboutme"}> 
-                About Me
+            <ActiveRef toPage={"/lunaris"}> 
+                Lunaris
+            </ActiveRef>
+            <ActiveRef toPage={"/minecraft"}> 
+                Minecraft
+            </ActiveRef>
+            <ActiveRef toPage={"/gaard"}> 
+                Gaard Tech
+            </ActiveRef>
+            <ActiveRef toPage={"/gi"}> 
+                General Inspection
             </ActiveRef>
         </ul>
     </nav>
