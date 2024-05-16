@@ -8,7 +8,6 @@ import VideoImage from "../components/TextVideo";
 export function FishingProject() {
     return (
         <div className="markdownDiv">
-            <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
             <center><h1>Lunapets Fishing</h1></center>
             <br />
             With the newly added <Link to={"/consumables"} className="textLink">Consumables System</Link>, we needed a way to introduce 

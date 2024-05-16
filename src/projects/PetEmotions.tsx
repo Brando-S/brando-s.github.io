@@ -47,7 +47,7 @@ export function PetEmotionsProject() {
             <h3>Surface UI</h3>
             <TextImage style={{ maxWidth: "20%", float: "right" }} src="/images/petEmotions/firstAttempt.png" text="An initial proof of concept. Something is still off with the eyes." />
             <p>
-                What if instead of manipulating the mesh at all, we instead just apply a SurfaceGui over the top of the parts of the face and then animate those?
+                What if instead of manipulating the mesh at all, we just apply a SurfaceGui over the top of the parts of the face and then animate those?
                 The face would then turn into multiple 2D surface guis and then they would be able to be animated with 2D textures.
                 I thought about this system a lot and couldn't really come up with a reason why it would not work.
             </p>
@@ -93,11 +93,9 @@ export function PetEmotionsProject() {
                 <b>We currently have the following expressions: </b>
                 <ul>
                     <li>Happy</li>
-                    <li>Neutral</li>
                     <li>Angry</li>
                     <li>Sad</li>
                 </ul>
-                <br />
             </p>
             <Carousel fade>
                 <Carousel.Item>
@@ -119,6 +117,12 @@ export function PetEmotionsProject() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <br/>
+            <h2>Implementation</h2>
+            <p>
+                I find the implementation of this feature to be pretty interesting and it was a very fun project to implement as well. 
+                I will explain the structure of the face parts a bit and I will also include a few code snippets and some engineering design decisions / challenges.
+            </p>
         </div>
 
     )

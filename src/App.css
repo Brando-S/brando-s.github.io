@@ -225,3 +225,8 @@ a {
   margin-right: auto;
   border-radius: 15px;
 }
+
+.carousel {
+  border-radius: 25px 25px 25px 25px;
+  overflow: hidden;
+}
