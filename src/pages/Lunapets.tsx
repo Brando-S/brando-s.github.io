@@ -24,7 +24,7 @@ export default function LunapetsProjects() {
         that I personally led and was responsible for most if not all of the design and engineering.
         </p>
         <div className="projectsbody">
-            <ProjectComponent projectName="Pet Emotions" linkSrc="faceEmotes" projectIcon="/faceEmotes/faceEmoteIcon.png" date=" " description="Personification fo pets through the use of emotions."/>
+            <ProjectComponent projectName="Pet Emotions" linkSrc="faceEmotes" projectIcon="/petEmotions/petEmotionIcon.png" date=" " description="Personification fo pets through the use of emotions."/>
             <ProjectComponent projectName="Trading" linkSrc="trading" projectIcon="/trading/icontrade.png" date=" " description="A way for players to trade items between one another"/>
             <ProjectComponent projectName="Fishing" linkSrc="fishing" projectIcon="fishing.png" date=" " description="A modular fishing activity for Lunapets"/>
             <ProjectComponent projectName="Consumables" linkSrc="consumables" projectIcon="/consumables/consumablesIcon.png" date=" " description="Items that the player can consume to apply buffs or debuffs to themselves or other entities"/>

@@ -1,5 +1,7 @@
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import TextImage from "../components/TextImage";
 import Carousel from 'react-bootstrap/Carousel';
+import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export function PetEmotionsProject() {
     return (
@@ -99,30 +101,110 @@ export function PetEmotionsProject() {
             </p>
             <Carousel fade>
                 <Carousel.Item>
-                    <img src="/images/petEmotions/finalGorillaHappy.png" className="d-block w-100"/>
+                    <img src="/images/petEmotions/finalGorillaHappy.png" className="d-block w-100" />
                     <Carousel.Caption>
                         <h3>Happy</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src="/images/petEmotions/finalGorillaSad.png" className="d-block w-100"/>
+                    <img src="/images/petEmotions/finalGorillaSad.png" className="d-block w-100" />
                     <Carousel.Caption>
                         <h3>Sad</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src="/images/petEmotions/finalGorillaAngry.png" className="d-block w-100"/>
+                    <img src="/images/petEmotions/finalGorillaAngry.png" className="d-block w-100" />
                     <Carousel.Caption>
                         <h3>Angry</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
             <br/>
+            <h2>Conclusion</h2>
+            <p>
+                I am very happy with the way the facial expressions turned out. Our team thinks it is a huge improvement and will make a big difference
+                in how a player views their pet. I also really like how much the eyes fit into our art style. They almost seem like they came right out of a 
+                cartoon, which is awesome and exactly the kind of vibe we want.
+            </p>
             <h2>Implementation</h2>
             <p>
-                I find the implementation of this feature to be pretty interesting and it was a very fun project to implement as well. 
+                I find the implementation of this feature to be pretty interesting and it was a very fun project to implement as well.
                 I will explain the structure of the face parts a bit and I will also include a few code snippets and some engineering design decisions / challenges.
+                For this section, I will only reference the gorilla, but know that we had to perform these same steps on all ~200 of our pets.
             </p>
+            <div className="textDiv">
+                <h4>Face Structure</h4>
+                <p>
+                    Let's first have a look at the structure of the gorilla's finished face. Outside of the normal structure of our mobs we can see three separate face parts:
+                    a left eye, a right eye, and a mouth. The root parts of each of these is simply a rectangular transparent part that the surface gui is mounted onto.
+                    This is then connected to the mesh with a RigidConstraint.
+                </p>
+                <TextImage style={{ maxWidth: "30%", float: "right" }} src="/images/petEmotions/faceStructure.png" text="The structure of the face parts" />
+                <p>
+                    You may notice that there exists a FakeEyeBall and a FakePupil inside of the LeftEyePart. This is because we had to remove the eyes completely from the face
+                    texture so that the new surface gui eye could be rendered over the top of the mesh. I didn't quite think about it, but we use ViewportFrames to render our items inside
+                    the 2D gui (the inventory). This means that when I got rid of the eyes on the texture itself, the eyes were not visible inside the ViewportFrame. This is because the SurfaceGui
+                    can not be rendered inside the ViewportFrame of course. This looked very strange, so I came up with the idea of adding a simple fake eyeball with parts that would get hidden
+                    when the pet is spawned into the world.
+                </p>
+            </div>
+            <div className="textDiv">
+                <h4>Eyelids</h4>
+                <p>
+                    The eyelid is a bit interesting because to seem natural it needs to be colored similarly to the skin (or fur) color of the pet.
+                    I really didn't want to have to make the separate eye textures for every pet and every emotion just to change the color of the eyelids. That seemed
+                    like a lot of work and would be a pain for future pets as well.
+                </p>
+                <TextImage style={{ maxWidth: "20%", float: "left" }} src="/images/petEmotions/pinkEyelids.png" text="Demonstrates full-color support for eyelids." />
+                <p>
+                    Instead, I decided to make the eyelid its own ImageLabel that was rendered over the top of the eye texture. I colored the texture of this
+                    eyelid white and then recolor it during runtime to the color of the animal. This way, the animal only needs a single color attribute added to it
+                    so that the game knows what color it should change the eyelid to when adding the fake eye.
+                </p>
+                <p>
+                    One cool benefit of making the eyelid a separate texture is that it can be angled using Roact. This allows us to smoothly transition the eyelid
+                    when the entities emotion changes. The eyelid angle is a state variable attached to a motor in roact.
+                </p>
+                <div className="codeBlock">
+                    <SyntaxHighlighter language="tsx" style={darcula}>
+                        {`
+const EntityEmotionSurface: Roact.FunctionComponent<IEntityEmotionProps> = (props) => {
+
+    const [faceTexture, setFaceTexture] = useState(props.emotion.getFacePartTexture(props.facePart));
+    const [rotationTransition, setRotationTransition] = useMotor(faceTexture?.lidRotation ?? 0);
+
+    useEffect(() => {
+        const newFaceTexture = props.emotion.getFacePartTexture(props.facePart);
+        setFaceTexture(newFaceTexture);
+        setRotationTransition(new Spring(newFaceTexture?.lidRotation ?? 0, { frequency: 1 }));
+
+    }, [props.facePart, props.emotion]);
+
+    const buildContents = () => {
+        if (faceTexture === undefined) return <></>
+
+        const rotation = rotationTransition.map((value) => value * props.facePart.getRotationMult());
+
+        return (
+            <>
+                <imagelabel Image={faceTexture.texture} Size={new UDim2(1.0, 0, 1.0, 0)} BackgroundTransparency={1.0} />
+                {faceTexture.lidTexture &&
+                    <imagelabel Image={faceTexture.lidTexture} Rotation={rotation} ImageColor3={props.lidColor} Size={new UDim2(1.0, 0, 1.0, 0)} BackgroundTransparency={1.0} />
+                }
+            </>
+        );
+    };
+
+    return (
+        <surfacegui Enabled Face={props.facePart.getPartFace()}>
+            {buildContents()}
+        </surfacegui>
+    );
+};`
+                        }
+                    </SyntaxHighlighter>
+                </div>
+            </div>
         </div>
 
     )
