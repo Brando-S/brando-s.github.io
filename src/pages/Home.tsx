@@ -47,7 +47,12 @@ export default function Home() {
                         <Col>4 Yoe</Col>
                     </Row>
                     <Row>
-                        <Col>C++</Col>
+                        <Col>SQL</Col>
+                        <Col>Advanced</Col>
+                        <Col>10 Yoe</Col>
+                    </Row>
+                    <Row>
+                        <Col>C & C++</Col>
                         <Col>Advanced</Col>
                         <Col>4 Yoe</Col>
                     </Row>
@@ -60,6 +65,21 @@ export default function Home() {
                         <Col>Lua</Col>
                         <Col>Advanced</Col>
                         <Col>2.5 Yoe</Col>
+                    </Row>
+                    <Row>
+                        <Col>Kotlin</Col>
+                        <Col>Proficient</Col>
+                        <Col></Col>
+                    </Row>
+                    <Row>
+                        <Col>Python</Col>
+                        <Col>Proficient</Col>
+                        <Col></Col>
+                    </Row>
+                    <Row>
+                        <Col>PhP</Col>
+                        <Col>Proficient</Col>
+                        <Col></Col>
                     </Row>
                 </Container>
                 <br/><br/>
@@ -77,7 +97,12 @@ export default function Home() {
                         <Col>5 Yoe</Col>
                     </Row>
                     <Row>
-                        <Col>Datastructures & Algorithms</Col>
+                        <Col>Relational Databases</Col>
+                        <Col>Advanced</Col>
+                        <Col>10 Yoe</Col>
+                    </Row>
+                    <Row>
+                        <Col>DSA</Col>
                         <Col>Advanced</Col>
                         <Col>8 Yoe</Col>
                     </Row>
@@ -85,6 +110,11 @@ export default function Home() {
                         <Col>Roblox Engine</Col>
                         <Col>Advanced</Col>
                         <Col>2.5 Yoe</Col>
+                    </Row>
+                    <Row>
+                        <Col>Reverse Engineering</Col>
+                        <Col>Advanced</Col>
+                        <Col>9 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Embedded Systems</Col>

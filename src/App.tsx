@@ -4,7 +4,7 @@ import './App.css';
 import TopNavbar from './components/TopNavBar';
 import Home from './pages/Home';
 import LunapetsProjects from './pages/Lunapets';
-import AboutMe from './pages/AboutMe';
+import LunarisRsps from './pages/Lunaris';
 import {Route, Routes} from "react-router-dom"
 import { FishingProject } from './projects/Fishing';
 import { ToastsProject } from './projects/Toasts';
@@ -22,7 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/lunapets" element={<LunapetsProjects />} />
-        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/lunaris" element={<LunarisRsps />} />
         <Route path="/fishing" element={<FishingProject />} />
         <Route path="/toasts" element={<ToastsProject />} />
         <Route path="/buffs" element={<BuffsProject />} />
