@@ -5,6 +5,12 @@ import Row from "react-bootstrap/esm/Row";
 export default function Home() {
     return (
         <>
+            <div className="contactInfo">
+                <center><b>Contact Info</b></center>
+                <b>Email:</b> sharpbrandon349@gmail.com
+                <br />
+                <b>Phone: </b> 586-883-1145
+            </div>
             <center>
                 <img className="rounded-circle shadow-4-strong" alt="avatar2" src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" />
             </center>

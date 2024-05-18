@@ -12,6 +12,7 @@ import { BuffsProject } from './projects/Buffs';
 import { ConsumablesProject } from './projects/Consumables';
 import { TradingProject } from './projects/Trading';
 import { PetEmotionsProject } from './projects/PetEmotions';
+import Minecraft from './pages/Minecraft';
 
 function App() {
   return ( 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/consumables" element={<ConsumablesProject />} />
         <Route path="/trading" element={<TradingProject />} />
         <Route path="/faceEmotes" element={<PetEmotionsProject />} />
+        <Route path="/minecraft" element={<Minecraft />} />
       </Routes>
     </div>
   </>

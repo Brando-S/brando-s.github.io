@@ -221,6 +221,22 @@ a {
   border-radius: 15px;
 }
 
+video[poster]
+{
+  object-fit:fill
+}
+
+.marquee {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marqueeContent {
+  max-height: 150px;
+  border-radius: 10px;
+}
+
 .textvideo-div {
   max-width: 75%;
   margin-left: auto;
@@ -243,4 +259,13 @@ a {
 .carousel {
   border-radius: 25px 25px 25px 25px;
   overflow: hidden;
+}
+
+.contactInfo {
+  background-color: #61dafb00;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  border-radius: 5px;
+  padding: 5px;
 }

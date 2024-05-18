@@ -1,61 +1,69 @@
+import TextImage from "../components/TextImage"
+import VideoImage from "../components/TextVideo"
+
 export default function LunarisRsps() {
 
     return <>
-        <h1>Lunaris</h1>
+        <br/>
+        <TextImage src={"/images/lunaris/logo.png"} text=" " style={{backgroundColor: "#d1d1d1", borderRadius: "15px"}}/>
+        <br/>
         <p>
             Lunaris was an emulation project that aimed to emulate an older version of the popular MMORPG game Runescape. I worked on this project
-            for 6 years and I loved every minute of it. When I started this project, I started it as a hobby project because I loved Runescape and
+            for 4 years and I loved every minute of it. When I started this project, I started it as a hobby project because I loved Runescape and
             I wanted to apply my own ideas to the game and create an enjoyable experience for others.
         </p>
-        <h2>Achievements</h2>
+        <h2>Summary</h2>
         <p>
-            When I started Lunaris it was just a hobby project. I had started and ran many small scale Runescape Private Servers before, but they never really
-            gained much traction. I was determined to make something successful.
+            I started this company in 2017 and ran it for 4 years and over those 4 years I grew the team from myself to 6 internal employees
+            and countless contractors. We operated with steady revenue over the entire 4 years of operation. 
         </p>
         <p>
-            I took the project from just me working on it with no users, to a functional business with 6 paid employees and a decently sized fanbase relative to the market.
-            At one point, Lunaris was one of the largest Runescape Private Servers to exist, with a peak concurrent user count of 165 players.
+            <b>Achievements</b>
+            <ul>
+                <li>165 concurrent players (on a single multiplayer server)</li>
+                <li>6 employees</li>
+                <li>Multiple volunteers</li>
+                <li>Over 25,000 registered accounts</li>
+            </ul>
         </p>
-        <h2>Motivation</h2>
+        <VideoImage src="/images/lunaris/lunarisTrailer.mp4" text="An early trailer for Lunaris. Sound Warning." thumbnail="/images/lunaris/trailerThumbnail.png" volume={0.25} autoPlay={false} loop={false}/>
+        <h2>Takeaways</h2>
         <p>
-            When I was young I was mostly an introvert and I found comfort in spending time on the internet.
-            In all honesty, I was too shy to make a lot of friends in real life, so I instead made friends
-            and joined communities on the internet. One community that I found myself in was Runescape.
-            I started playing Runescape when I was very young, 8 years old to be exact.
-        </p>
-        <p>
-            I really latched onto Runescape I think because of the social aspect of the game. There was a large map with a lot of people
-            on the same game world all playing together at the same time. People would often stand around in groups in select cities to
-            socialize and make friends. People even formed clans and played the game as a group. My older brother played, my cousins played,
-            real-life friends played, etc. It was amazing.
-        </p>
-        <h4>Difficulty</h4>
-        <p>
-            Runescape is a very tedious and grindy game. Some players play on the same account for over 5,000 hours. As a young child,
-            the game was too difficult for me to play efficiently. I just didn't have the attention span nor the skill to dedicate real time to a task
-            to get better, therefore it was hard to make real progress towards meaningful goals.
+            Running this project taught an indescribable amount about a very diverse set of areas. I hired employees, budgeted revenue, hired contractors,
+            managed marketing, maintained the website, designed the databased, etc. I was not only the lead engineer on the project, but I also managed and operated the entire business for the entire 4 years.
         </p>
         <p>
-            This led my friends and I to start playing private emulations of Runescape called <i>Runescape Private Servers</i> or <i>RSPS</i> for short.
-            These emulations often had custom content and were generally an easier more sped up version of the game (though significantly lower quality). I loved these emulation projects
-            because it allowed me to achieve the goals and the items that I was never able to in the real game.
+            One of the biggest takeaways in hinesight was how much I enjoyed the videogame industry. I absolutely loved updating a product and watching people
+            play and enjoy the content that our team worked so hard on.
         </p>
-        <h4>Response</h4>
+        <h2>Tech Stack</h2>
+        <h5>Backend Game Server</h5>
         <p>
-            Having these very fun experiences and making these memories motivated me to create my own <i>Runescape Private Server</i>.
-            I dreamed about my friends and others of playing a game that I made and experiencing them enjoy something that I created
-            just like I experienced the games that I played.
-        </p>
-        <p> 
-            When I was playing these <i>Runescape Private Servers</i> I was far too young to understand how to make my own. When I started to get older (~12 Years Old)
-            I started to attempt to make one as best I could. I had no idea what I was doing, but I just tinkered around with open sourced projects until
-            I could get something running. I have very fond memories of me opening Java source code files with the native windows text editor Notepad, trying to "code" any changes
-            I could, saving these files, and running a batch script to compile them into Java Byte Code to run. I remember that if I had a syntax error, I really didn't even know
-            because I wasn't using an IDE. I would try to compile and see a list of errors that I didn't understand, so I would panick and just undo my changes.
+            The backend game server was propriatary and was written from scratch. When I started Lunaris I started with an open-source game server
+            that was developed by other people who I didn't know. This open-source game server got the project started, but was not adequate to 
+            scale a business on.
         </p>
         <p>
-            Eventually as I grew older and tinkered around more and more, I started to actually learn and make meaningful progress. I eventually learned what an IDE was and started
-            actually learning how to code. The rest is history.
+            Over the course of the 4 years, I completely rewrote the entire back-end server. I rewrote the network stack from scratch using Netty 4
+            and even upgraded the communication protocol with the client. I also rewrote the entire gameplay engine to use a custom made plugin framework
+            modelled after Minecraft's Spigot. This plugin framework was completely event driven and very modular.
+        </p>
+        <h5>Rendering Engine</h5>
+        <p>
+            Lunaris operated under a fairly unique tech-stack for a video game. Since it was an emulation project, the 3D rendering engine
+            was called Runetek 3 and was last updated by Jagex in 2007. Runetek 3 is a Software Only 3D renderer, meaning it did not utilize
+            modern GPU technology. The rendering engine itself was written in pure Java.
+        </p>
+        <h5>Client</h5>
+        <p>
+            The game client was originally developed by Jagex all the way back in 2007. It was written in Java and when Lunaris started,
+            we started with an obfuscated compiled executable. To work with this client, I had to completely reverse engineer it. Since it was
+            written in Java, the compiled executable contained Java byte-code. Which can be decompiled and back-ported into Java Source code.
+        </p>
+        <p>
+            Prior to distribution though, the executable is obfuscated to make the decompiled bytecode unreadable by humans. To work on the project
+            and make necessary edits, I had to manually deobfuscate and refactor the entire game client (which was fairly large). I didn't do this all at once,
+            but I did it over a few years, deobfuscating and refactoring portions of the code as needed.
         </p>
     </>
 
