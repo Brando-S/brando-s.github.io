@@ -65,13 +65,38 @@ html {
      margin-left: 25%;
      margin-right: 25%;
   }
+
+  .contactInfoDesktop {
+    visibility: visible;
+  }
+
+  .contactInfoMobile {
+    visibility: hidden;
+  }
+  
 }
 
-@media (max-width: 700px) {
+@media (max-width: 906px) {
   .content{
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  .contactInfoDesktop {
+    visibility: hidden;
+  }
+
+  .contactInfoMobile {
+    visibility: visible;
+  }
+}
+
+.contactInfoDesktop {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .content h1 {
@@ -265,15 +290,6 @@ video[poster]
   overflow: hidden;
 }
 
-.contactInfo {
-  background-color: #61dafb00;
-  position: fixed;
-  bottom: 1em;
-  right: 1em;
-  border-radius: 5px;
-  padding: 5px;
-}
-
 .fixedCarousel .fixedCarouselItem {
   height: 400px;
 }
@@ -284,4 +300,18 @@ video[poster]
     top: 0;
     left: 0;
     min-height: 400px;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1 0 auto;
+}
+
+.card-img-top {
+  min-height: 200px;
 }

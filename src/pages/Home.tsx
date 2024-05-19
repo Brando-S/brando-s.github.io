@@ -5,27 +5,24 @@ import Row from "react-bootstrap/esm/Row";
 export default function Home() {
     return (
         <>
-            <div className="contactInfo">
+            <div className="contactInfoDesktop">
                 <center><b>Contact Info</b></center>
                 <b>Email:</b> sharpbrandon349@gmail.com
                 <br />
                 <b>Phone: </b> 586-883-1145
             </div>
             <center>
-                <img className="rounded-circle shadow-4-strong" alt="avatar2" src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" />
+                <img className="rounded-circle shadow-4-strong" alt="avatar2" src="/images/myPhoto.png" style={{maxWidth: "200px", maxHeight: "200px", /*filter: "grayscale(100%)"*/}} />
             </center>
             <h2>About Me</h2>
             <p>
-                Hello! My name is Brandon. I am a passionate Software Engineer and Entrepreneur from the United States of America. I have over 11 years
-                of professional experience programming in a diverse set of languages and environments. I absolutely love anything
-                software related and I really enjoy complex problem solving. I have been fascinated by all things technical since I was a young child,
-                tinkering around with and reverse engineering technology as long as I can remember.
+            Hello! My name is Brandon. I am a passionate Software Engineer and Entrepreneur from the United States of America. I have over <b>11 years of professional experience</b> programming in a diverse set of languages and environments. I love anything relating to software and I enjoy complex problem-solving. I have been fascinated by all things technical since I was a young child, tinkering around with reverse engineering technology for as long as I can remember.
             </p>
             <p>
-                I hold a <b>Bachelors degree in Computer Science</b> and an associates degree in Software Engineering.
+                I hold a <b>Bachelor's degree in Computer Science</b> and an associate's degree in Software Engineering.
             </p>
             <p>
-                Outside of my professional life, I love playing video games, listening to all kinds of differnet music, and spending time with family and friends.
+            Outside of my professional life, I love playing video games, listening to all kinds of different music, and spending time with family and friends.
             </p>
             <h2>Skills</h2>
             <p>
@@ -39,52 +36,42 @@ export default function Home() {
                 <Container>
                     <Row className="">
                         <Col><b>Language</b></Col>
-                        <Col><b>Proficiency</b></Col>
                         <Col><b>Years of Experience</b></Col>
                     </Row>
                     <Row>
                         <Col>Java</Col>
-                        <Col>Expert</Col>
                         <Col>8 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>C# & .Net</Col>
-                        <Col>Expert</Col>
                         <Col>4 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>SQL</Col>
-                        <Col>Advanced</Col>
                         <Col>10 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>C & C++</Col>
-                        <Col>Advanced</Col>
                         <Col>4 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Typescript</Col>
-                        <Col>Advanced</Col>
                         <Col>2.5 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Lua</Col>
-                        <Col>Advanced</Col>
                         <Col>2.5 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Kotlin</Col>
-                        <Col>Proficient</Col>
                         <Col></Col>
                     </Row>
                     <Row>
                         <Col>Python</Col>
-                        <Col>Proficient</Col>
                         <Col></Col>
                     </Row>
                     <Row>
                         <Col>PhP</Col>
-                        <Col>Proficient</Col>
                         <Col></Col>
                     </Row>
                 </Container>
@@ -94,56 +81,54 @@ export default function Home() {
                 <Container>
                     <Row className="">
                         <Col><b>Technology</b></Col>
-                        <Col><b>Proficiency</b></Col>
                         <Col><b>Years of Experience</b></Col>
                     </Row>
                     <Row>
                         <Col>Minecraft Engine</Col>
-                        <Col>Expert</Col>
                         <Col>5 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Relational Databases</Col>
-                        <Col>Advanced</Col>
                         <Col>10 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>DSA</Col>
-                        <Col>Advanced</Col>
                         <Col>8 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Roblox Engine</Col>
-                        <Col>Advanced</Col>
                         <Col>2.5 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Reverse Engineering</Col>
-                        <Col>Advanced</Col>
                         <Col>9 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Embedded Systems</Col>
-                        <Col>Advanced</Col>
                         <Col>4 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Robotics</Col>
-                        <Col>Advanced</Col>
                         <Col>4 Yoe</Col>
                     </Row>
                     <Row>
                         <Col>Unity Engine</Col>
-                        <Col>Proficient</Col>
                         <Col></Col>
                     </Row>
                     <Row>
                         <Col>Unreal Engine</Col>
-                        <Col>Proficient</Col>
                         <Col></Col>
                     </Row>
                 </Container>
             </p>
+            <div className="contactInfoMobile">
+            <h2>Contact Info</h2>
+                <p>
+                    <b>Email:</b> sharpbrandon349@gmail.com
+                    <br />
+                    <b>Phone: </b> 586-883-1145
+                </p>
+            </div>
         </>
     )
 }

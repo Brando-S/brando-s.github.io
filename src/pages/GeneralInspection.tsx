@@ -21,8 +21,10 @@ export default function GeneralInspection() {
         </p>
         <h2>Customers</h2>
         <p>
-            General Inspection works primarily in the fastener and defense industry. That being said, most of the work we did is confidential
-            in nature. Below is a list of a few companies I directly worked with during my time at general inspection.
+        General Inspection works primarily in the fastener and defense industry. That being said, most of the work we do is confidential.
+        </p>
+        <p>
+        Below is a list of a few companies I directly worked with during my time at general inspection:
         </p>
         <Marquee className="marquee" gradient={true}>
             <img className="marqueeContent" src="/images/gi/vistaLogo.png" />
@@ -47,9 +49,16 @@ export default function GeneralInspection() {
             Due to the confidential nature of General Inspection's business and customers, I can not describe more specifics about the projects I worked on during my time with them.
             I would however be willing to discuss more in an interview setting.
         </p>
-        <center>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/R_0r0-8GUmI?si=Xfy_5YG9NbRMRYlO?modestbranding=1&autohide=1&showinfo=0&controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
-        </center>
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                    <iframe width="280" height="160" src="https://www.youtube.com/embed/R_0r0-8GUmI?si=Xfy_5YG9NbRMRYlO?modestbranding=1&autohide=1&showinfo=0&controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+                </div>
+                <div className="col">
+                    <iframe width="280" height="160" src="https://www.youtube.com/embed/6xxx87d89OU?si=JERDceNgfj6ADJOP?modestbranding=1&autohide=1&showinfo=0&controls=0&start=74" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+                </div>
+            </div>
+        </div>
     </>
 
 }

@@ -37,21 +37,19 @@ export default function GaardTech() {
         </p>
         <h2>Reargaard</h2>
         <p>
-            Reargaard is the first product that we designed, developed, and are now manufacturing. This device uses state of the art LiDAR technology
-            to view the world and sense oncomming objects that could potentially be a threat to the wearer. The user wears this device on their waist and 
-            receives haptic feedback when the device detects a potential threat approaching the wearer. The perceived danger of the threat is encoded into the haptics.
-            We are currently putting the finishing touches on the design of the cases and starting volume manufacturing of the electronics.
+        Reargaard is the first product that we designed, developed, and are now manufacturing. This device uses state-of-the-art LiDAR technology to view the world and sense oncoming objects that could potentially be a threat to the wearer. 
+        The user wears this device on their waist and receives haptic feedback when the device detects a potential threat approaching the wearer. 
+        The perceived danger of the threat is encoded into the haptics. We are currently putting the finishing touches on the design of the cases and starting volume manufacturing of the electronics.
         </p>
         <h5>Visual Design</h5>
         <p>
-            Reargaard is small enough to be carried in your hand, being slightly larger than a modern cell-phone. As time progresses, we are continuously working to improve and iterate on the
-            design of Reargaard to not only make it smaller and more comfortable for the user to wear, but also to make it more affordable.
+        Reargaard is small enough to be carried in your hand, being slightly larger than a modern cell phone. As time progresses, we are continuously working to improve and iterate on the design of Reargaard 
+        to not only make it smaller and more comfortable for the user to wear but also to make it more affordable.
         </p>
         <h5>Technical Design</h5>
         <p>
-            Reargaard uses custom electronics designed from scratch along with a state of the art LiDAR sensor. The electronics were designed by an electronics design firm,
-            and all of the software was written in-house by myself. Unfortunately, the electronics and software is propriatary, and due to the nature I can not include
-            much about it here.
+        Reargaard uses custom electronics designed from scratch along with a state-of-the-art LiDAR sensor. The electronics were designed by an electronics design firm, and all of the software was written in-house by myself. 
+        Unfortunately, the electronics and software are proprietary, and due to their nature, I can not include much about it here.
         </p>
         <Carousel fade className="fixedCarousel">
                 <Carousel.Item className="fixedCarouselItem">
@@ -64,11 +62,11 @@ export default function GaardTech() {
         <br/>
         <h2>Omnigaard</h2>
         <p>
-            Omnigaard is our second product. It aims to solve some of the challenges that we couldn't with Reargaard, mainly by seeing 360 degrees around the wearer
-            without any blindspots.
+        Omnigaard is our second product. It aims to solve some of the challenges that we couldn't with Reargaard, 
+        mainly by seeing 360 degrees around the wearer without any blind spots.
         </p>
         <p>
-            This product is still quite early in development, with Kettering University performing research studys concerning potential designs. 
+        This product is still quite early in development, with Kettering University performing research studies concerning potential designs.
         </p>
         <p>
             One of the largest challenges with this product is figuring out a way to effectively provide haptic feedback to the user in a way that
