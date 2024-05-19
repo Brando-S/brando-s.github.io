@@ -13,6 +13,8 @@ import { ConsumablesProject } from './projects/Consumables';
 import { TradingProject } from './projects/Trading';
 import { PetEmotionsProject } from './projects/PetEmotions';
 import Minecraft from './pages/Minecraft';
+import GaardTech from './pages/GaardTech';
+import GeneralInspection from './pages/GeneralInspection';
 
 function App() {
   return ( 
@@ -31,6 +33,8 @@ function App() {
         <Route path="/trading" element={<TradingProject />} />
         <Route path="/faceEmotes" element={<PetEmotionsProject />} />
         <Route path="/minecraft" element={<Minecraft />} />
+        <Route path="/gaard" element={<GaardTech />} />
+        <Route path="/gi" element={<GeneralInspection />} />
       </Routes>
     </div>
   </>

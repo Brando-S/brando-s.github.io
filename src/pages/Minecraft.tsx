@@ -7,7 +7,7 @@ export default function Minecraft() {
     return <>
         <TextImage src={"/images/minecraft/minecraftLogo.png"} text=" "/>
         <p>
-            I worked on a number of popular Minecraft servers for many years early in my career. Minecraft was a fantastic learning
+            I worked on a number of popular Minecraft servers as a Software Engineer for many years early in my career. Minecraft was a fantastic learning
             environment because large multiplayer servers needed to be fairly optimized to support a large number of players on a single
             server. The scene was also very competitive requiring the games to be designed very well.
         </p>
@@ -21,8 +21,10 @@ export default function Minecraft() {
             <img className="marqueeContent" src="/images/minecraft/mcLegends.png" />
             <img className="marqueeContent" src="/images/minecraft/drlogo.png"/>
             <img className="marqueeContent" src="/images/minecraft/arkham.png" />
-            <img className="marqueeContent" src="/images/minecraft/shotbow.webp" />
         </Marquee>
+        <p>
+            All of the listed servers were large and hosted multiple thousands of concurrent players.
+        </p>
         <h3>Plugin Architecture</h3>
         <p>
             Minecraft offers multiplayer servers where players can play together. Quickly the community started to modify the play experience using server sided

@@ -5,8 +5,7 @@ export default function LunapetsProjects() {
     <div>
         <h1><center>Lunapets</center></h1>
         <p>
-        Lunapets is a multiplayer videogame that myself and a small team have been working on for about a year. Our team puts the user first
-        in all of our designs. Lunapets is designed to be intuitive and fun for a demographic ranging from kinds as young as 7 years of age to young adults.
+        Lunapets is a multiplayer videogame that myself and a small team have been working on for about a year. Lunapets is designed to be intuitive and fun for a demographic ranging from kinds as young as 7 years of age to young adults.
         This means that we have to design with User-Experience (UX) at the forefront of every decision.
         </p>
         <p>
@@ -15,7 +14,7 @@ export default function LunapetsProjects() {
         </p>
         <p>
         Below I have included some key projects from Lunapets that I am proud of and that I think help to show not only my technical skillset, but my skillset as a content designer and how I 
-        approach User Experience. It is important to note that this site isn't a comprehensive breakdown of the entire game. The content is complex and it would take a lot more content to explain
+        approach User Experience. It is important to note that this site isn't a comprehensive breakdown of the entire game. The game is complex and it would take a lot more site content to explain
         every facet of the game.
         </p>
         <p>
@@ -24,12 +23,12 @@ export default function LunapetsProjects() {
         that I personally led and was responsible for most if not all of the design and engineering.
         </p>
         <div className="projectsbody">
-            <ProjectComponent projectName="Pet Emotions" linkSrc="faceEmotes" projectIcon="/petEmotions/petEmotionIcon.png" date=" " description="Personification fo pets through the use of emotions."/>
+            <ProjectComponent projectName="Pet Emotions" linkSrc="faceEmotes" projectIcon="/petEmotions/petEmotionIcon.png" date=" " description="Personification fo pets through the use of emotions"/>
             <ProjectComponent projectName="Trading" linkSrc="trading" projectIcon="/trading/icontrade.png" date=" " description="A way for players to trade items between one another"/>
             <ProjectComponent projectName="Fishing" linkSrc="fishing" projectIcon="fishing.png" date=" " description="A modular fishing activity for Lunapets"/>
             <ProjectComponent projectName="Consumables" linkSrc="consumables" projectIcon="/consumables/consumablesIcon.png" date=" " description="Items that the player can consume to apply buffs or debuffs to themselves or other entities"/>
             <ProjectComponent projectName="Buffs" linkSrc="buffs" projectIcon="/buffs/buffs.png" date=" " description="Buffs augment the way that entities interact with the game world"/>
-            <ProjectComponent projectName="Toast Notifications" linkSrc="toasts" projectIcon="/toasts/toastIcon.png" date=" " description="A text notification system for Lunapets"/>
+            <ProjectComponent projectName="Toasts" linkSrc="toasts" projectIcon="/toasts/toastIcon.png" date=" " description="A text notification system for Lunapets"/>
         </div>
     </div>
     );

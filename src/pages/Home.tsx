@@ -22,7 +22,7 @@ export default function Home() {
                 tinkering around with and reverse engineering technology as long as I can remember.
             </p>
             <p>
-                I hold a Bachelors degree in Computer Science and an associates degree in Software Engineering.
+                I hold a <b>Bachelors degree in Computer Science</b> and an associates degree in Software Engineering.
             </p>
             <p>
                 Outside of my professional life, I love playing video games, listening to all kinds of differnet music, and spending time with family and friends.
@@ -144,13 +144,6 @@ export default function Home() {
                     </Row>
                 </Container>
             </p>
-            <h2>Contact Information</h2>
-            <p>
-                If you need to reach me or have any questions about anything on this website please do not hesitate to reach out to me.
-            </p>
-            <b>Email:</b> sharpbrandon349@gmail.com
-            <br />
-            <b>Phone: </b> 586-883-1145
         </>
     )
 }

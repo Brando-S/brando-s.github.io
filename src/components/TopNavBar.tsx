@@ -21,14 +21,14 @@ export default function TopNavbar() {
             <ActiveRef toPage={"/lunaris"}> 
                 Lunaris
             </ActiveRef>
-            <ActiveRef toPage={"/minecraft"}> 
-                Minecraft
-            </ActiveRef>
             <ActiveRef toPage={"/gaard"}> 
                 Gaard Tech
             </ActiveRef>
             <ActiveRef toPage={"/gi"}> 
                 General Inspection
+            </ActiveRef>
+            <ActiveRef toPage={"/minecraft"}> 
+                Minecraft
             </ActiveRef>
         </ul>
     </nav>
