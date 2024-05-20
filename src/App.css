@@ -137,12 +137,9 @@ html {
   align-items: center;
 }
 
-.nav li:hover {
-  background-color: #777;
-}
-
-.nav li.active {
-  background-color: #555;
+.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .site-title {
@@ -314,4 +311,10 @@ video[poster]
 
 .card-img-top {
   min-height: 200px;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
 }

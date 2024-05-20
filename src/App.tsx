@@ -15,11 +15,12 @@ import { PetEmotionsProject } from './projects/PetEmotions';
 import Minecraft from './pages/Minecraft';
 import GaardTech from './pages/GaardTech';
 import GeneralInspection from './pages/GeneralInspection';
+import TopNavigation from './components/TopNavigation';
 
 function App() {
   return ( 
   <>
-    <TopNavbar />
+    <TopNavigation />
     <div className='content'>
       <Routes>
         <Route path="/" element={<Home />} />

@@ -15,7 +15,7 @@ export default function GeneralInspection() {
             GI's 3D inspection and gaging systems have become the world standard in automated 3D inspection of cylindrical manufactured goods. 
         </p>
         <p>
-            I worked with General Inspection for 4 years, first starting as a Software Engineer, and eventually becoming a <b>Software Technical Lead</b> where 
+            I worked with General Inspection for 3 years, first starting as a Software Engineer, and eventually becoming a <b>Software Technical Lead</b> where 
             I led and architected GI's inspection software. I also often interfaced directly with customers to understand business requirements
             and provide technical support, either remotely or in the field.
         </p>
