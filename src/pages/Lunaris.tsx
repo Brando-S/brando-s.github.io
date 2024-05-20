@@ -32,7 +32,7 @@ export default function LunarisRsps() {
                 </div>
             </center>*/
         }
-        {<VideoImage src="/images/lunaris/lunarisTrailer.mp4" text="An early trailer for Lunaris. Sound Warning." thumbnail="/images/lunaris/trailerThumbnail.png" volume={0.25} autoPlay={false} loop={false} />}
+        {<VideoImage src="/images/lunaris/lunarisTrailer.mp4" text="An early trailer for Lunaris. Sound Warning." thumbnail="/images/lunaris/trailerThumbnail.png" volume={0.05} autoPlay={false} loop={false} />}
         <h2>Takeaways</h2>
         <p>
             Running this project taught an indescribable amount about a very diverse set of areas. I hired employees, budgeted revenue, hired contractors,
