@@ -27,7 +27,7 @@ const TopNavigation: React.FC<TopNavigationProps> = (props) => {
                         <li className={`nav-item ${GetNavClass("/gi")}`}><Link className={`nav-link fs-5 ${GetNavClass("/gi")}`} aria-current="page" to="/gi">General Inspection</Link></li>
                         <li className={`nav-item ${GetNavClass("/minecraft")}`}><Link className={`nav-link fs-5 ${GetNavClass("/minecraft")}`} aria-current="page" to="/minecraft">Minecraft</Link></li>
                     </ul>
-                    <Button size="lg" variant="success" className="ms-auto">Résumé</Button>
+                        <Button size="lg" variant="success" className="ms-auto" href="/images/BrandonSResume.pdf">Résumé</Button>
                 </div>
             </div>
         </Nav>
