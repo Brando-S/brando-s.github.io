@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import TopNavbar from './components/TopNavBar';
 import Home from './pages/Home';
 import LunapetsProjects from './pages/Lunapets';
 import LunarisRsps from './pages/Lunaris';
