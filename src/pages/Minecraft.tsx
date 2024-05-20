@@ -19,7 +19,7 @@ export default function Minecraft() {
             <img className="marqueeContent" src="/images/minecraft/minecade.png" />
             <img className="marqueeContent" src="/images/minecraft/skydoesmc.png" />
             <img className="marqueeContent" src="/images/minecraft/mcLegends.png" />
-            <img className="marqueeContent" src="/images/minecraft/drlogo.png" />
+            <img className="marqueeContent" src="/images/minecraft/drLogo.png" />
             <img className="marqueeContent" src="/images/minecraft/arkham.png" />
         </Marquee>
         <p>
