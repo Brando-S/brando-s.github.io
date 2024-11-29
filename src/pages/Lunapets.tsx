@@ -1,7 +1,7 @@
 import ProjectComponent from "../components/ProjectComponent";
 
 export default function LunapetsProjects() {
-    //Testing
+    //Testing2
     return (
         <div>
             <h1><center>Lunapets</center></h1>
