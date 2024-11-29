@@ -165,6 +165,7 @@ export function PetEmotionsProject() {
                     One cool benefit of making the eyelid a separate texture is that it can be angled using Roact. This allows us to smoothly transition the eyelid
                     when the entities emotion changes. The eyelid angle is a state variable attached to a motor in roact.
                 </p>
+                <br/><br/>
                 <div className="codeBlock">
                     <SyntaxHighlighter language="tsx" style={darcula}>
                         {`
