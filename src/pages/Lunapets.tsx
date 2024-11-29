@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import ProjectComponent from "../components/ProjectComponent";
 
 export default function LunapetsProjects() {
@@ -20,6 +22,11 @@ export default function LunapetsProjects() {
                 I would also like to point out that the Lunapets team only has two engineers working on the project, and I am one of them. I manage and run the entire studio and everyone working on the project, but I don't personally spearhead every feature.
                 The features listed below are features that I led and was responsible for most if not all of the design and engineering.
             </p>
+            <center>
+            <Link to={"https://www.roblox.com/games/15475532124"} className="projectlink mt-auto" target={"_blank"}>
+                <Button size="lg" variant="success" className="mt-auto">Play Now</Button>
+            </Link>
+            </center>
             <div className="projectsbody">
                 <ProjectComponent projectName="Pet Emotions" linkSrc="faceEmotes" projectIcon="/petEmotions/petEmotionIcon.png" date=" " description="Personification fo pets through the use of emotions" />
                 <ProjectComponent projectName="Trading" linkSrc="trading" projectIcon="/trading/icontrade.png" date=" " description="A way for players to trade items between one another" />
