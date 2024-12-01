@@ -21,7 +21,7 @@ const TopNavigation: React.FC<TopNavigationProps> = (props) => {
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className={`nav-item ${GetNavClass("/lunapets")}`}><Link className={`nav-link fs-5`} aria-current="page" to="/lunapets">Lunapets</Link></li>
+                        <li className={`nav-item ${GetNavClass("/lunapets")}`}><Link className={`nav-link fs-5`} aria-current="page" to="/lunapets">Lunapets (Roblox)</Link></li>
                         <li className={`nav-item ${GetNavClass("/lunaris")}`}><Link className={`nav-link fs-5 ${GetNavClass("/lunaris")}`} aria-current="page" to="/lunaris">Lunaris</Link></li>
                         <li className={`nav-item ${GetNavClass("/gaard")}`}><Link className={`nav-link fs-5 ${GetNavClass("/gaard")}`} aria-current="page" to="/gaard">Gaardtech</Link></li>
                         <li className={`nav-item ${GetNavClass("/gi")}`}><Link className={`nav-link fs-5 ${GetNavClass("/gi")}`} aria-current="page" to="/gi">General Inspection</Link></li>
