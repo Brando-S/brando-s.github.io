@@ -58,9 +58,9 @@ export default function GeneralInspection() {
         <p>
             <h2>Tech Stack & Technologies</h2>
                 <hr />
-                <Container>
+                {/*<Container>*/}
                     {buildTechnologyGrid()}
-                </Container>
+                {/*</Container>*/}
         </p>
         <h2>Projects</h2>
             <Collapsible trigger={"Real-Time Coroutines"}>
